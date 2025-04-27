@@ -10,4 +10,26 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
 # PasswordGenerator
+
+command
+
+1. npm create vite@latest
+2. npm install
+3. npm run dev
+
+4. npm install -D tailwindcss postcss autoprefixer
+5. npx tailwindcss init -p
+
+6. npm install tailwindcss @tailwindcss/vite
+7. Add the @tailwindcss/vite plugin to your Vite configuration.
+   import { defineConfig } from 'vite'
+   import tailwindcss from '@tailwindcss/vite'
+   export default defineConfig({
+   plugins: [
+   tailwindcss(),
+   ],
+   })
+
+8. @import "tailwindcss";
